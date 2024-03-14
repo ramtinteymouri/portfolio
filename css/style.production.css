@@ -107,7 +107,7 @@ button {
     transition: 0.5s opacity, 0.4s background-color, 0.5s color, 0.4s font-size;
 }
 
-#button_form {
+#button-form {
     /* overwrites browser defaults and resets the border */
     border: none;
     display: inline-block;
@@ -160,6 +160,26 @@ button:focus {
 }
 
 .button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    font-size: 18px;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+    background-color: #adf9d9;
+    color: black;
+}
+
+#button-form:hover {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    font-size: 18px;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+    background-color: #adf9d9;
+    color: black;
+}
+
+#button-form:focus {
     /* lets the mouse appear as a hand when hovering over the button */
     cursor: pointer;
     font-size: 18px;
@@ -331,6 +351,30 @@ td:first-child {
         transform: scale(1.05);
         cursor: pointer;
     }
+}
+
+.contact-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.contact-list address,
+.contact-list form {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 20%;
+    flex: 0 1 20%;
+    margin: 20px;
+    text-align: left;
+}
+
+address {
+    line-height: 1.2;
 }
 
 h1 {

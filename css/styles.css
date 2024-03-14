@@ -71,7 +71,7 @@ a:active {
 
 button,
 .button,
-#button_form {
+#button-form {
     /* overwrites browser defaults and resets the border */
     border: none;
     display: inline-block;
@@ -94,7 +94,9 @@ button,
 button:hover,
 button:focus,
 .button:hover,
-.button:focus {
+.button:focus,
+#button-form:hover,
+#button-form:focus {
     /* lets the mouse appear as a hand when hovering over the button */
     cursor: pointer;
     font-size: 18px;
@@ -236,6 +238,23 @@ td:first-child {
         transform: scale(1.05);
         cursor: pointer;
     }
+}
+
+.contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-list address,
+.contact-list form {
+    flex: 0 1 20%;
+    margin: 20px;
+    text-align: left;
+}
+
+address {
+    line-height: 1.2;
 }
 
 h1 {
