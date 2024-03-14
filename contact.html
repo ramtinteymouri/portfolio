@@ -40,28 +40,31 @@
     </header>
     <main>
         <h1 id="contact">Contact</h1>
-        <address>
-            <h2>Address</h2>
-            <p>Golden Gate Street</p>
-            <p>San Francisco, CA</p>
-            <p>USA</p>
-            <br>
-            <p>Cell: <a href="tel:+1 1234567890">+1(123)456-7890</a></p>
-            <p>Email: <a href="mailto:myname@gmail.com">myname@gmail.com</a></p>
-            <a href="mailto:myname@gmail.com">Contact me</a>
-        </address>
-        <form action="" method="post" id="contact-form">
-            <label class="standard-label" for="contact-email">E-mail: <span>*</span></label>
-            <input type="email" id="contact-email" required>
-
-            <label class="standard-label" for="contact-phone">Phone: (###-###-####)</label>
-            <input type="tel" id="contact-phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-
-            <label class="standard-label" for="contact-message">Message: <span>*</span></label>
-            <textarea maxlength="240" id="contact-message" required></textarea>
-            <br>
-            <input type="submit" value="Send message" id="button_form">
-        </form>
+        <div class="contact-list">
+            <address>
+                <h2>Address</h2>
+                <p>San Francisco, CA</p>
+                <p>USA</p>
+                <br>
+                <p>Cell: <a href="tel:+1 1234567890">+1(123)456-7890</a></p>
+                <p>Email: <a href="mailto:myname@gmail.com">myname@gmail.com</a></p>
+                <a href="mailto:myname@gmail.com">Contact me</a>
+            </address>
+            <form action="" method="post" id="contact-form">
+                <label class="standard-label" for="contact-email">E-mail: <span>*</span></label>
+                <br>
+                <input type="email" id="contact-email" required>
+                <br>
+                <label class="standard-label" for="contact-phone">Phone: (###-###-####)</label>
+                <br>
+                <input type="tel" id="contact-phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                <br>
+                <label class="standard-label" for="contact-message">Message: <span>*</span></label>
+                <br>
+                <textarea maxlength="240" id="contact-message" required></textarea>
+                <input type="submit" value="Send message" id="button-form">
+            </form>
+        </div>
     </main>
     <footer class="page-footer">
         <p>Find me on</p>
