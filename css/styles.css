@@ -119,11 +119,6 @@ button:focus,
     text-decoration: none;
 }
 
-#word_web {
-    background-color: black;
-    color: orange;
-}
-
 .profile__portrait {
     float: left;
     width: 250px;
