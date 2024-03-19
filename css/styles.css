@@ -235,6 +235,13 @@ td:first-child {
         transform: scale(1.05);
         cursor: pointer;
     }
+
+    /* Disable hover effect for the last child on Edge browsers */
+    @supports (-ms-ime-align: auto) {
+        .project-list__item:last-child:hover {
+            transform: none;
+        }
+    }
 }
 
 .contact-list {
