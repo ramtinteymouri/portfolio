@@ -352,6 +352,8 @@ td:first-child {
     /* Disable hover effect for the last child on Edge browsers */
     @supports (-ms-ime-align: auto) {
         .project-list__item:last-child:hover {
+            -webkit-transform: none;
+            -ms-transform: none;
             transform: none;
         }
     }
@@ -590,4 +592,18 @@ h1 {
 
 .about--items {
     padding-bottom: 20px;
+}
+
+.social-media a img {
+    -webkit-transition: -webkit-transform 0.1s ease;
+    transition: -webkit-transform 0.1s ease;
+    -o-transition: transform 0.1s ease;
+    transition: transform 0.1s ease;
+    transition: transform 0.1s ease, -webkit-transform 0.1s ease;
+}
+
+.social-media a:hover img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
 }
