@@ -350,7 +350,7 @@ td:first-child {
     }
 
     /* Disable hover effect for the last child on Edge browsers */
-    @supports (-ms-ime-align: auto) {
+    @supports (-ms-accelerator:true) {
         .project-list__item:last-child:hover {
             -webkit-transform: none;
             -ms-transform: none;
