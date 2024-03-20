@@ -236,12 +236,11 @@ td:first-child {
         cursor: pointer;
     }
 
-    /* Disable hover effect for the last child on Edge browsers */
-    @supports (-ms-accelerator:true) {
-        .project-list__item:last-child:hover {
-            transform: none;
-        }
+    .project-list__item:last-child:hover {
+        transform: scale(1.01);
+        cursor: pointer;
     }
+
 }
 
 .contact-list {

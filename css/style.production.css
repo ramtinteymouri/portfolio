@@ -349,13 +349,11 @@ td:first-child {
         cursor: pointer;
     }
 
-    /* Disable hover effect for the last child on Edge browsers */
-    @supports (-ms-accelerator:true) {
-        .project-list__item:last-child:hover {
-            -webkit-transform: none;
-            -ms-transform: none;
-            transform: none;
-        }
+    .project-list__item:last-child:hover {
+        -webkit-transform: scale(1.01);
+        -ms-transform: scale(1.01);
+        transform: scale(1.01);
+        cursor: pointer;
     }
 }
 
