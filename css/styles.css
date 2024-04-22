@@ -400,3 +400,12 @@ h1 {
 .social-media a:hover img {
     transform: scale(1.1);
 }
+
+.error-message {
+    color: red;
+    font-size: 0.8em;
+  }
+
+  .input-wrapper {
+    margin-bottom: 10px;
+  }

@@ -65,17 +65,23 @@
                 <a href="mailto:myname@gmail.com">Contact me</a>
             </address>
             <form action="" method="post" id="contact-form">
-                <label class="standard-label" for="contact-email">E-mail: <span>*</span></label>
-                <br>
-                <input type="email" id="contact-email" required>
-                <br>
-                <label class="standard-label" for="contact-phone">Phone: (###-###-####)</label>
-                <br>
-                <input type="tel" id="contact-phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="123-45-678">
-                <br>
-                <label class="standard-label" for="contact-message">Message: <span>*</span></label>
-                <br>
-                <textarea maxlength="240" id="contact-message" required></textarea>
+                <div class="input-wrapper">
+                    <label class="standard-label" for="contact-email">E-mail: <span>*</span></label>
+                    <br>
+                    <input type="email" id="contact-email" required>
+                    <br>
+                </div>
+                <div class="input-wrapper">
+                    <label class="standard-label" for="contact-phone">Phone: (###-###-####)</label>
+                    <br>
+                    <input type="tel" id="contact-phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="123-45-678">
+                    <br>
+                </div>
+                <div class="input-wrapper">
+                    <label class="standard-label" for="contact-message">Message: <span>*</span></label>
+                    <br>
+                    <textarea maxlength="240" id="contact-message" required></textarea>
+                </div>
                 <input type="submit" value="Send message" id="button-form">
             </form>
         </div>
